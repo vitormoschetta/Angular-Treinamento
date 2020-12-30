@@ -12,12 +12,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { PageNotfoundComponent } from './page-notfound/page-notfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormulariosComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    PageNotfoundComponent
   ],
   imports: [
     BrowserModule,
