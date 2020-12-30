@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { DialogModalComponent } from './dialog-modal/dialog-modal.component';
 import { FormulariosComponent } from './formularios/formularios.component';
 import { PageNotfoundComponent } from './page-notfound/page-notfound.component';
 
 const appRoutes: Routes = [
   { path: 'formularios', component: FormulariosComponent },
+  { path: 'dialog', component: DialogModalComponent },
   { path: 'binding', component: DataBindingComponent },
   { path: '', component: AppComponent },
   { path: '**', component: PageNotfoundComponent },
