@@ -1,0 +1,45 @@
+<div>
+    <div class="title">ul li</div>    
+    <mat-card>        
+        <li *ngFor="let item of lista">
+            {{item}}
+        </li>
+    </mat-card>        
+</div>
+
+
+<div>
+    <div class="title">mat-list</div>    
+    <mat-card>
+        <mat-list role="list">
+            <mat-list-item *ngFor="let item of lista">
+                {{item}}
+            </mat-list-item>      
+        </mat-list>
+    </mat-card>        
+</div>
+
+
+<div>
+    <div class="title">mostrando index da lista (inicia no zero)</div>    
+    <mat-card>
+        <mat-list role="list">
+            <mat-list-item *ngFor="let item of lista; let i=index">
+                {{i}} - {{item}}
+            </mat-list-item>      
+        </mat-list>
+    </mat-card>        
+</div>
+
+
+<div>
+    <div class="title">montar lista direto no html</div>    
+    <mat-card>
+        <mat-list role="list">
+            <mat-list-item *ngFor="let item of [].constructor(10); let i = index">
+                {{i}} - item
+            </mat-list-item>      
+        </mat-list>
+    </mat-card>        
+</div>
+

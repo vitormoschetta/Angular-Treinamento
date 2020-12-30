@@ -4,11 +4,15 @@ import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DialogModalComponent } from './dialog-modal/dialog-modal.component';
 import { FormulariosComponent } from './formularios/formularios.component';
+import { LoopsComponent } from './loops/loops.component';
 import { PageNotfoundComponent } from './page-notfound/page-notfound.component';
+import { SwitchComponent } from './switch/switch.component';
 
 const appRoutes: Routes = [
   { path: 'formularios', component: FormulariosComponent },
   { path: 'dialog', component: DialogModalComponent },
+  { path: 'switch', component: SwitchComponent },
+  { path: 'loops', component: LoopsComponent },
   { path: 'binding', component: DataBindingComponent },
   { path: '', component: AppComponent },
   { path: '**', component: PageNotfoundComponent },
