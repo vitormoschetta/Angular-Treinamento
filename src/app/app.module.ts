@@ -8,6 +8,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
@@ -20,6 +22,7 @@ import { LoopsComponent } from './loops/loops.component';
 import { SwitchComponent } from './switch/switch.component';
 import { App01Component } from './switch/app01/app01.component';
 import { App02Component } from './switch/app02/app02.component';
+import { TableComponent, TableComponent2 } from './table/table.component';
 
 
 @NgModule({
@@ -32,7 +35,9 @@ import { App02Component } from './switch/app02/app02.component';
     LoopsComponent,
     SwitchComponent,
     App01Component,
-    App02Component
+    App02Component,
+    TableComponent,
+    TableComponent2,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +51,8 @@ import { App02Component } from './switch/app02/app02.component';
     MatInputModule,
     MatDialogModule,
     MatListModule,
+    MatTableModule,
+    MatPaginatorModule,
   ],
   exports: [
     MatCardModule,
@@ -54,6 +61,8 @@ import { App02Component } from './switch/app02/app02.component';
     MatInputModule,
     MatDialogModule,
     MatListModule,
+    MatTableModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,10 @@
+table {
+    width: 100%;    
+}
+mat-paginator {
+    width: 100%;
+}
+
+div {
+    margin-bottom: 3em;
+}
