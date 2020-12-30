@@ -1,0 +1,20 @@
+mat-card {
+    width: 400px;    
+}
+
+div {
+    margin-bottom: 2em;
+}
+
+.title {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+label {
+    margin-left: 1em;
+}
+
+button {
+    margin-left: 1em;
+}

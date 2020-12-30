@@ -1,0 +1,21 @@
+<mat-card>
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input type="text" matInput [(ngModel)]="model.name" name="name">
+        </mat-form-field>
+
+        <div class="buttons">
+            <button type="submit" mat-raised-button class="button-add">
+                Register
+            </button>
+        </div>
+    </form>
+</mat-card>
+
+
+<mat-card>
+    <input [(ngModel)]="teste">
+    <label>{{teste}}</label>
+</mat-card>
+

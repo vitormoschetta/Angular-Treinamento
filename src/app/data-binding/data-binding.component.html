@@ -1,0 +1,48 @@
+<div>
+    <div class="title">Two-way Data Binding</div>    
+    <mat-card>        
+        <input [(ngModel)]="texto02"> 
+        <label>{{texto02}}</label>   
+    </mat-card>        
+</div>
+
+<div>
+    <div class="title">One-way Data Binding</div>    
+    <mat-card>
+        <input [ngModel]="texto03"> 
+        <label>{{texto03}}</label>   
+    </mat-card>        
+</div>
+
+<div>
+    <div class="title">(blur)</div>  
+    <mat-card>
+        <input [(ngModel)]="texto04" (blur)="onBlur()">                
+    </mat-card>        
+</div>
+
+<div>
+    <div class="title">(click)</div>  
+    <mat-card>
+        <input #valor type="text" placeholder="digite algo e pressione"> 
+        <button mat-raised-button color="primary" (click)="onClick(valor.value)">Click</button>               
+    </mat-card>        
+</div>
+
+<div>
+    <div class="title">(click2)</div>  
+    <mat-card>
+        <input #valor2 type="text" value="verifique o console ao clicar"> 
+        <button mat-raised-button color="primary" (click)="onClick2(valor2)">Click2</button>               
+    </mat-card>        
+</div>
+
+<div>
+    <div class="title">(keyup)</div>  
+    <mat-card>
+        <input (keyup)="onKey($event)"> 
+        <p>{{texto06}}</p>             
+    </mat-card>        
+</div>
+
+
